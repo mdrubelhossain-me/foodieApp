@@ -1,0 +1,200 @@
+.footer-section {
+    width: 100%;
+    height: 480px;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-section img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-section .over-lay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .9;
+    z-index: 1;
+}
+
+.footer-section .content {
+    position: absolute;
+    padding: 80px 0px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    z-index: 2;
+}
+
+.footer-section .content .logo {
+    display: block;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 14px;
+    margin-top: -5px;
+}
+
+.footer-section .content .f-widget p {
+    margin-top: 12px;
+    font-size: 13px;
+    text-align: justify;
+    width: 90%;
+}
+
+.footer-section .content .f-widget h4 {
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.social .icon {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #70ac11;
+    color: white;
+    text-align: center;
+    padding-right: 12px;
+    margin-right: 10px;
+    background-color: #70ac11;
+    border-radius: 2px;
+    position: relative;
+}
+
+.social .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 14px;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    text-align: center;
+}
+
+.social .icon:hover {
+    background-color: transparent;
+    border-color: #70ac11;
+    color: #70ac11;
+    transition: .6s ease;
+}
+
+.footer-section .content .f-widget ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-section .content .f-widget ul li {
+    line-height: 28px;
+    font-size: 13px;
+}
+
+.footer-section .content .f-widget ul li i {
+    color: white !important;
+    padding-right: 8px;
+    font-size: 13px;
+}
+
+.footer-section .content .f-widget ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.footer-section .content .f-widget ul li:hover a {
+    padding-left: 8px;
+    transition: .6s;
+}
+
+.ex-footer {
+    border-top: 1px solid rgb(51, 51, 51);
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ex-footer .payment{
+    width: 40%;
+    height: 60px;
+    border: none;
+    position: relative;
+}
+.ex-footer .payment img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+}
+
+.ex-footer p {
+    font-size: 14px;
+    color: white;
+}
+
+.ex-footer p a {
+    color: white;
+}
+
+.f-middle {
+    border-top: 1px solid rgb(51, 51, 51);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-top: 6px;
+}
+.f-middle h6{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.f-middle a{
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+}
+.f-middle a:hover{
+    text-decoration: underline;
+}
+.f-middle span{
+    color: white;
+    padding: 0px 8px;
+}
+
+
+
+
+
+
+@media (max-width: 991px) {
+    .footer-section {
+        height: 750px;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        height: 960px;
+        overflow: hidden;
+    }
+    
+    .footer-section .content .f-widget p {
+        width: 100%;
+    }
+    .f-middle {
+        flex-direction: column;
+    }
+    .ex-footer {
+        flex-direction: column;
+    }
+    .ex-footer p{
+        text-align: center;
+    }
+}

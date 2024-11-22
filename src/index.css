@@ -38,3 +38,9 @@ textarea:focus {
   border-color: #70ac11!important;
   box-shadow: none!important;
 }
+
+@media (max-width: 768px){
+  html{
+      overflow-x: hidden;
+  }
+}

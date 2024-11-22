@@ -4,7 +4,7 @@ import sliderImages from '../Data/SliderData';
 
 const Hero = () => {
   return (
-    <div>
+    <div className='hero-section'>
       <div id="carouselExampleIndicators" className="carousel slide">
         <div className="carousel-indicators">
           {sliderImages.map((image, index) => (

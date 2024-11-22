@@ -1,0 +1,130 @@
+.desktop-navigation nav {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #70ac11;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 22px;
+    -webkit-text-stroke: 1px;
+}
+
+.desktop-navigation .navbar-nav .nav-item {
+    padding: 10px 5px;
+    color: white;
+}
+
+.desktop-navigation .navbar-nav .nav-item:hover {
+    background-color: #8ac925;
+}
+
+.desktop-navigation .navbar-nav .nav-item .nav-link {
+    color: white;
+    font-size: 15px;
+}
+
+.desktop-navigation .btn-cart {
+    margin-left: 15px;
+}
+
+.desktop-navigation .btn-cart .badge {
+    background-color: rgb(252, 108, 24) !important;
+    font-size: 12px;
+}
+
+.desktop-navigation .right-section button {
+    border: none !important;
+    background-color: transparent !important;
+    color: white;
+    font-size: 18px;
+}
+
+.desktop-navigation .right-section button span {
+    font-size: 12px;
+}
+
+.s-btn {
+    background-color: #70ac11 !important;
+    border: none !important;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+
+
+/* Mobile Navigation */
+.mobile-navigation {
+    background-color: #70ac11;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 0px;
+    display: none;
+}
+
+.mobile-navigation button {
+    border: none !important;
+    background-color: transparent !important;
+    color: white;
+    font-size: 18px;
+}
+
+.mobile-navigation .n-toggle-btn i {
+    font-size: 25px;
+}
+
+.mobile-navigation .badge {
+    background-color: rgb(252, 108, 24) !important;
+    font-size: 12px;
+}
+
+.offcanvas {
+    font-family: "Poppins", sans-serif;
+    width: 70%!important;
+}
+
+.offcanvas .logo {
+    text-decoration: none;
+    font-size: 24px;
+    color: #70ac11;
+    -webkit-text-stroke: 1px;
+}
+
+.offcanvas .navbar-nav {
+    margin-top: 25px;
+}
+
+.offcanvas .navbar-nav .nav-item {
+    border-bottom: 1px solid rgb(214, 248, 216);
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+}
+
+.offcanvas .navbar-nav .nav-item:hover .nav-link {
+    padding-left: 10px;
+    transition: .6s;
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    .desktop-navigation {
+        display: none;
+    }
+
+    .mobile-navigation {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .desktop-navigation {
+        display: none;
+    }
+
+    .mobile-navigation {
+        display: block;
+    }
+}

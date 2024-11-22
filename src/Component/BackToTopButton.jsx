@@ -35,6 +35,7 @@ const BackToTopButton = () => {
     </>
   );
 };
+
 const styles = {
   button: {
     position: "fixed",

@@ -19,6 +19,11 @@
 .desktop-navigation .navbar-nav .nav-item:hover {
     background-color: #8ac925;
 }
+.nav-item.active {
+    background-color: #8ac925;
+    border-bottom: 2px solid red;
+  }
+  
 
 .desktop-navigation .navbar-nav .nav-item .nav-link {
     color: white;
@@ -109,6 +114,7 @@
 
 
 
+
 @media only screen and (max-width: 991px) {
     .desktop-navigation {
         display: none;
@@ -128,3 +134,4 @@
         display: block;
     }
 }
+

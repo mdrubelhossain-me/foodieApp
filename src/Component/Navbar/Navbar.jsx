@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const [menu, setMenu] = useState("home");
+
   return (
     <div>
       {/* Desktop Navigation Start  */}
-      <div class="desktop-navigation">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container">
-            <a class="navbar-brand" href="#">
+      <div className="desktop-navigation">
+        <nav className="navbar navbar-expand-lg">
+          <div className="container">
+            <a className="navbar-brand" href="#">
               foodieApp
             </a>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -20,39 +22,54 @@ const Navbar = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
+              <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li
+                  onClick={() => setMenu("home")}
+                  className={`nav-item ${menu === "home" ? "active" : ""}`}
+                >
+                  <a className="nav-link" href="#">
                     Home
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
+                <li
+                  onClick={() => setMenu("menu")}
+                  className={`nav-item ${menu === "menu" ? "active" : ""}`}
+                >
+                  <a className="nav-link" href="#">
                     Menu
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
+                <li
+                  onClick={() => setMenu("about")}
+                  className={`nav-item ${menu === "about" ? "active" : ""}`}
+                >
+                  <a className="nav-link" href="#">
                     About us
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
+                <li
+                  onClick={() => setMenu("contact")}
+                  className={`nav-item ${menu === "contact" ? "active" : ""}`}
+                >
+                  <a className="nav-link" href="#">
                     Contact us
                   </a>
                 </li>
               </ul>
               <div className="ms-auto right-section">
                 <button data-bs-toggle="modal" data-bs-target="#searchModal">
-                  <i class="bi bi-search"></i>
+                  <i className="bi bi-search"></i>
                 </button>
 
-                <button type="button" class="position-relative mx-4">
+                <button type="button" className="position-relative mx-4">
                   <i className="bi bi-cart"></i>
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                  <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
                     0
                   </span>
                 </button>
@@ -68,7 +85,7 @@ const Navbar = () => {
       {/* Desktop Navigation End  */}
 
       {/* Mobile Navigation Start */}
-      <div class="mobile-navigation">
+      <div className="mobile-navigation">
         <div className="container">
           <div className="d-flex justify-content-between">
             <div>
@@ -78,17 +95,17 @@ const Navbar = () => {
                 data-bs-target="#navOffcanvas"
                 aria-controls="navOffcanvas"
               >
-                <i class="bi bi-list"></i>
+                <i className="bi bi-list"></i>
               </button>
             </div>
             <div className="ms-auto right-section">
               <button data-bs-toggle="modal" data-bs-target="#searchModal">
-                <i class="bi bi-search"></i>
+                <i className="bi bi-search"></i>
               </button>
 
-              <button type="button" class="position-relative mx-4">
+              <button type="button" className="position-relative mx-4">
                 <i className="bi bi-cart"></i>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
                   0
                 </span>
               </button>
@@ -104,44 +121,44 @@ const Navbar = () => {
 
       {/* Offcanvas Start  */}
       <div
-        class="offcanvas offcanvas-start"
+        className="offcanvas offcanvas-start"
         tabindex="-1"
         id="navOffcanvas"
         aria-labelledby="navOffcanvasLabel"
       >
-        <div class="offcanvas-header">
+        <div className="offcanvas-header">
           <button
             type="button"
-            class="btn-close"
+            className="btn-close"
             data-bs-dismiss="offcanvas"
             aria-label="Close"
           ></button>
         </div>
-        <div class="offcanvas-body container">
+        <div className="offcanvas-body container">
           <div className="text-center">
             <a href="" className="logo">
               foodieApp
             </a>
           </div>
           <div>
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
                   Home
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
                   Menu
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
                   About us
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
                   Contact us
                 </a>
               </li>
@@ -152,23 +169,23 @@ const Navbar = () => {
 
       {/* Modal Start  */}
       <div
-        class="modal fade"
+        className="modal fade"
         id="searchModal"
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog">
-          <div class="modal-content p-3">
+        <div className="modal-dialog">
+          <div className="modal-content p-3">
             <div className="d-flex justify-content-end">
               <button
                 type="button"
-                class="btn-close"
+                className="btn-close"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
               <input
                 type="text"
                 className="form-control"

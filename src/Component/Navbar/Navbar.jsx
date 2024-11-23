@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
@@ -10,9 +11,9 @@ const Navbar = () => {
       <div className="desktop-navigation">
         <nav className="navbar navbar-expand-lg">
           <div className="container">
-            <a className="navbar-brand" href="#">
+            <Link to='/' className="navbar-brand" href="#">
               foodieApp
-            </a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -33,9 +34,9 @@ const Navbar = () => {
                   onClick={() => setMenu("home")}
                   className={`nav-item ${menu === "home" ? "active" : ""}`}
                 >
-                  <a className="nav-link" href="#">
+                  <Link to='/' className="nav-link" href="#">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li
                   onClick={() => setMenu("menu")}
@@ -49,17 +50,17 @@ const Navbar = () => {
                   onClick={() => setMenu("about")}
                   className={`nav-item ${menu === "about" ? "active" : ""}`}
                 >
-                  <a className="nav-link" href="#">
+                  <Link to='/about' className="nav-link" href="#">
                     About us
-                  </a>
+                  </Link>
                 </li>
                 <li
                   onClick={() => setMenu("contact")}
                   className={`nav-item ${menu === "contact" ? "active" : ""}`}
                 >
-                  <a className="nav-link" href="#">
+                  <Link to='/contact' className="nav-link" href="#">
                     Contact us
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <div className="ms-auto right-section">

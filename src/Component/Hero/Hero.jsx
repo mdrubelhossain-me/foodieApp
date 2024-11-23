@@ -34,6 +34,7 @@ const Hero = () => {
                 <div className="carousel-text">
                   <h2>{image.title}</h2>
                   <p>{image.description}</p>
+                  <button className='myBtn2'>View Menu</button>
                 </div>
               </div>
             </div>

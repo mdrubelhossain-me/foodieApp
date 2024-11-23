@@ -1,0 +1,38 @@
+.explore-menu {
+    font-family: "Poppins", sans-serif;
+}
+
+.explore-menu p {
+    font-size: 14px;
+}
+
+.explore-menu .explore-menu-item img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid #70ac11;
+    cursor: pointer;
+}
+
+.explore-menu .explore-menu-item h6 {
+    font-size: 15px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.explore-menu-item img.active {
+    border: 2px solid red;
+  }
+
+
+@media only screen and (max-width: 768px) {
+    .explore-menu .explore-menu-item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .explore-menu .explore-menu-item h6 {
+        font-size: 14px;
+    }
+}

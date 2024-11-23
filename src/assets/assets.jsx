@@ -1,4 +1,5 @@
 import React from "react";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 import menu1 from "../../src/assets/images/fruits/fruits.jpg";
 import menu2 from "../../src/assets/images/desserts/d7.jpg";
@@ -140,7 +141,7 @@ export const foodList = [
     image: d2,
     price: 40,
     description:
-      "Coffee-soaked ladyfingers layered with creamy mascarpone, dusted with cocoa, creating an irresistibly classic Italian treat",
+      "Spiced baked apples topped with a golden oatmeal crumble, best enjoyed warm with vanilla ice cream",
     category: "dessert",
   },
   {

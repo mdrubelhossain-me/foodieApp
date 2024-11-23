@@ -1,0 +1,76 @@
+
+.food-item-card .card {
+    overflow: hidden;
+
+    font-family: "Poppins", sans-serif;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.food-item-card .card .food-photo{
+    width: 100%;
+    height: 135px;
+    overflow: hidden;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    text-align: center;
+    margin: auto;
+
+}
+.food-item-card .card .food-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    
+}
+.food-item-card .card .card-body a{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    opacity: .8;
+}
+.food-item-card .card .card-body a:hover{
+    opacity: 1;
+}
+.food-item-card .card .card-body h6{
+    color: #70ac11;
+    margin-top: 5px;
+}
+.food-item-card .card .card-body p{
+    font-size: 13px;
+}
+
+.food-item-card .review-section i {
+    color: rgb(252, 108, 24);
+    font-size: 11px;
+}
+
+.food-item-card .review-section span {
+    font-size: 12px;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .food-item-card .card {
+        height: auto;
+    }
+    .food-item-card .card .food-photo{
+        height: 130px;
+    }
+    .food-item-card .card .card-body p{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .food-item-card .card {
+        height: auto;
+    }
+    .food-item-card .card .food-photo{
+        height: 110px;
+    }
+    .food-item-card .card .card-body p{
+        display: none;
+    }
+}

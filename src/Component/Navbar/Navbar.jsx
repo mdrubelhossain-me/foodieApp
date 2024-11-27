@@ -77,16 +77,28 @@ const Navbar = () => {
                   <i className="bi bi-search"></i>
                 </button>
 
-                <Link to='/cart'  className="position-relative mx-4 cart-icon">
+                <Link
+                  to="/cart"
+                  onClick={() => setMenu("cart")}
+                  className={`position-relative mx-4 cart-icon ${
+                    menu === "cart" ? "active" : ""
+                  }`}
+                >
                   <i className="bi bi-cart"></i>
                   <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
                     {cartItemCount}
                   </span>
                 </Link>
 
-                <a href="#" className="btn btn-outline-light">
+                <Link
+                  to="/loginSingup"
+                  onClick={() => setMenu("loginSingup")}
+                  className={`btn btn-outline-light ${
+                    menu === "loginSingup" ? "active" : ""
+                  }`}
+                >
                   SignIn
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -113,16 +125,20 @@ const Navbar = () => {
                 <i className="bi bi-search"></i>
               </button>
 
-              <Link to='/cart' type="button" className="position-relative mx-4 cart-icon">
+              <Link
+                to="/cart"
+                type="button"
+                className="position-relative mx-4 cart-icon"
+              >
                 <i className="bi bi-cart"></i>
                 <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
                   {cartItemCount}
                 </span>
               </Link>
 
-              <a href="" className="btn btn-outline-light">
+              <Link to="/loginSingup" className="btn btn-outline-light">
                 SignIn
-              </a>
+              </Link>
             </div>
           </div>
         </div>

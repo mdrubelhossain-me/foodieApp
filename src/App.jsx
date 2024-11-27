@@ -7,6 +7,7 @@ import Home from './Component/Home/Home';
 import About from './Pages/About/About';
 import Contact from './Pages/Contact/Contact';
 import Cart from './Pages/Cart/Cart';
+import LoginSignup from "./Pages/LoginSignup/LoginSignup";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about" element={<About/>}></Route>
           <Route path="/contact" element={<Contact/>}></Route>
           <Route path="/cart" element={<Cart/>}></Route>
+          <Route path="/loginSingup" element={<LoginSignup/>}></Route>
         </Routes>
         <BackToTopButton />
         <Footer />

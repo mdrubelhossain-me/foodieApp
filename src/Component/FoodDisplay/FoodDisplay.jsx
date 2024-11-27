@@ -8,7 +8,7 @@ const FoodDisplay = ({ category }) => {
 
   return (
     <div className="container pb-5">
-         <h3 className="pb-4 pt-1 border-top">Top Favorite Food Near You</h3>
+         <h4 className="pb-4 pt-1 border-top">Top Favorite Food Near You</h4>
       <div className="food-display" id="food-display">
         <div className="display-item">
           {foodList.map((item, index) => {

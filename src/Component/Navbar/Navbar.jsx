@@ -1,17 +1,26 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { StoreContext } from "../../Context/StoreContext";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
+  const { cart } = useContext(StoreContext);
+
+  // Get the total number of items in the cart
+  const cartItemCount = Object.values(cart).reduce(
+    (acc, count) => acc + count,
+    0
+  );
 
   return (
     <div>
-      {/* Desktop Navigation Start  */}
+      {/* Desktop Navigation Start */}
       <div className="desktop-navigation">
         <nav className="navbar navbar-expand-lg">
           <div className="container">
-            <Link to='/' className="navbar-brand" href="#">
+            <Link to="/" className="navbar-brand">
               foodieApp
             </Link>
             <button
@@ -34,7 +43,7 @@ const Navbar = () => {
                   onClick={() => setMenu("home")}
                   className={`nav-item ${menu === "home" ? "active" : ""}`}
                 >
-                  <Link to='/' className="nav-link" href="#">
+                  <Link to="/" className="nav-link" href="#">
                     Home
                   </Link>
                 </li>
@@ -50,7 +59,7 @@ const Navbar = () => {
                   onClick={() => setMenu("about")}
                   className={`nav-item ${menu === "about" ? "active" : ""}`}
                 >
-                  <Link to='/about' className="nav-link" href="#">
+                  <Link to="/about" className="nav-link" href="#">
                     About us
                   </Link>
                 </li>
@@ -58,7 +67,7 @@ const Navbar = () => {
                   onClick={() => setMenu("contact")}
                   className={`nav-item ${menu === "contact" ? "active" : ""}`}
                 >
-                  <Link to='/contact' className="nav-link" href="#">
+                  <Link to="/contact" className="nav-link" href="#">
                     Contact us
                   </Link>
                 </li>
@@ -71,11 +80,11 @@ const Navbar = () => {
                 <button type="button" className="position-relative mx-4">
                   <i className="bi bi-cart"></i>
                   <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
-                    0
+                    {cartItemCount}
                   </span>
                 </button>
 
-                <a href="" className="btn btn-outline-light">
+                <a href="#" className="btn btn-outline-light">
                   SignIn
                 </a>
               </div>
@@ -83,7 +92,7 @@ const Navbar = () => {
           </div>
         </nav>
       </div>
-      {/* Desktop Navigation End  */}
+      {/* Desktop Navigation End */}
 
       {/* Mobile Navigation Start */}
       <div className="mobile-navigation">
@@ -107,7 +116,7 @@ const Navbar = () => {
               <button type="button" className="position-relative mx-4">
                 <i className="bi bi-cart"></i>
                 <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
-                  0
+                  {cartItemCount}
                 </span>
               </button>
 
@@ -144,9 +153,9 @@ const Navbar = () => {
           <div>
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link to="/" className="nav-link" href="#">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
@@ -154,14 +163,14 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link to="/about" className="nav-link" href="#">
                   About us
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link to="/contact" className="nav-link" href="#">
                   Contact us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

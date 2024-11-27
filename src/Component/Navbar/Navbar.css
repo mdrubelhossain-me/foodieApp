@@ -46,14 +46,14 @@
     font-size: 18px;
 }
 
-.desktop-navigation .right-section button span {
+.right-section button span {
     font-size: 12px;
 }
-.desktop-navigation .right-section .cart-icon{
+ .right-section .cart-icon{
     color: white;
     font-size: 18px;
 }
-.desktop-navigation .right-section .cart-icon span {
+ .right-section .cart-icon span {
     font-size: 12px;
 }
 

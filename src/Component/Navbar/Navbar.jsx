@@ -113,12 +113,12 @@ const Navbar = () => {
                 <i className="bi bi-search"></i>
               </button>
 
-              <button type="button" className="position-relative mx-4">
+              <Link to='/cart' type="button" className="position-relative mx-4 cart-icon">
                 <i className="bi bi-cart"></i>
                 <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
                   {cartItemCount}
                 </span>
-              </button>
+              </Link>
 
               <a href="" className="btn btn-outline-light">
                 SignIn

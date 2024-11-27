@@ -49,6 +49,13 @@
 .desktop-navigation .right-section button span {
     font-size: 12px;
 }
+.desktop-navigation .right-section .cart-icon{
+    color: white;
+    font-size: 18px;
+}
+.desktop-navigation .right-section .cart-icon span {
+    font-size: 12px;
+}
 
 .s-btn {
     background-color: #70ac11 !important;

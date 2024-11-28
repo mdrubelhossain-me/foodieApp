@@ -1,0 +1,63 @@
+.product-cart {
+    font-family: "Poppins", sans-serif;
+}
+
+.product-cart table thead td {
+    font-size: 13px;
+    background-color: #70ac11;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.product-cart table tr td img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.product-cart table tr td {
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+}
+
+.product-cart table tr td button {
+    border: none;
+    background: none;
+    color: #70ac11;
+}
+
+.product-cart form label {
+    font-size: 13px;
+}
+
+.product-cart form input {
+    font-size: 13px;
+}
+
+.product-cart p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 4px;
+    font-size: 14px;
+}
+
+.product-cart .btn-dark {
+    background-color: #70ac11 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.product-cart .qty-show {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .product-cart .myBtn {
+        width: 100%;
+    }
+}

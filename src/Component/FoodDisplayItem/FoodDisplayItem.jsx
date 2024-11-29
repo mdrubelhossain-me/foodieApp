@@ -1,6 +1,7 @@
+// FoodDisplayItem.js
 import React, { useContext } from "react";
-import "./FoodDisplayItem.css";
 import { StoreContext } from "../../Context/StoreContext";
+import "./FoodDisplayItem.css";
 
 const FoodDisplayItem = ({ id, name, image, price, description }) => {
   const { cart, addToCart, removeFromCart } = useContext(StoreContext);

@@ -1,7 +1,38 @@
-import React from "react";
+import React, { useContext } from "react";
+import { StoreContext } from "../../Context/StoreContext";
 import "./CartItem.css";
-import p1 from "../../assets/images/desserts/d1.jpg";
+
 const CartItems = () => {
+  const { cart, foodList, removeFromCart } = useContext(StoreContext);
+
+  // Helper function to get item details from the food list using the item id
+  const getItemDetails = (id) => {
+    return foodList.find(item => item.f_id === id);
+  };
+
+  // Calculate Sub Total
+  const calculateSubtotal = () => {
+    return Object.keys(cart).reduce((acc, id) => {
+      const item = getItemDetails(Number(id));
+      if (item) {
+        acc += item.price * cart[id];
+      }
+      return acc;
+    }, 0);
+  };
+
+  // Calculate Shipping Fee (This can be dynamic depending on your business logic)
+  const calculateShippingFee = () => {
+    return 5; // Example static fee, this can be adjusted or fetched dynamically
+  };
+
+  // Calculate Total
+  const calculateTotal = () => {
+    const subtotal = calculateSubtotal();
+    const shippingFee = calculateShippingFee();
+    return subtotal + shippingFee;
+  };
+
   return (
     <div>
       <div className="container pt-5 pb-5">
@@ -19,23 +50,36 @@ const CartItems = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td className="text-center">
-                    <img src={p1} className="cart-img img-fluid" alt="" />
-                  </td>
-                  <td>name</td>
-                  <td>$0</td>
-                  <td>0</td>
-                  <td>$0</td>
-                  <td className="text-center">
-                    <button
-                      title="Remove"
-                      className="btn btn-outline-danger btn-sm"
-                    >
-                      <i className="bi bi-trash"></i>
-                    </button>
-                  </td>
-                </tr>
+                {Object.keys(cart).map((id) => {
+                  const item = getItemDetails(Number(id));
+                  if (item) {
+                    return (
+                      <tr key={id}>
+                        <td className="text-center">
+                          <img
+                            src={item.image}
+                            className="cart-img img-fluid"
+                            alt={item.name}
+                          />
+                        </td>
+                        <td>{item.name}</td>
+                        <td>${item.price}</td>
+                        <td>{cart[id]}</td>
+                        <td>${item.price * cart[id]}</td>
+                        <td className="text-center">
+                          <button
+                            title="Remove"
+                            className="btn btn-outline-danger btn-sm"
+                            onClick={() => removeFromCart(Number(id))}
+                          >
+                            <i className="bi bi-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                    );
+                  }
+                  return null;
+                })}
               </tbody>
             </table>
           </div>
@@ -59,15 +103,15 @@ const CartItems = () => {
               <h4 className="mb-3">Cart Total</h4>
               <div className="d-flex justify-content-between border-bottom mb-2">
                 <p>Sub Total</p>
-                <p>0</p>
+                <p>${calculateSubtotal().toFixed(2)}</p>
               </div>
               <div className="d-flex justify-content-between border-bottom mb-2">
                 <p>Shipping Fee</p>
-                <p>0</p>
+                <p>${calculateShippingFee()}</p>
               </div>
               <div className="d-flex justify-content-between border-bottom mb-4">
                 <h6>Total</h6>
-                <h6>0</h6>
+                <h6>${calculateTotal().toFixed(2)}</h6>
               </div>
               <div>
                 <button className="myBtn m-0">Proceed to Checkout</button>

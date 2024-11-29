@@ -1,3 +1,4 @@
+// StoreContext.js
 import React, { createContext, useState } from "react";
 import { foodList } from "../assets/assets";
 
@@ -32,6 +33,7 @@ const StoreContextProvider = (props) => {
       return newCart;
     });
   };
+  
 
   const contextValue = {
     foodList,

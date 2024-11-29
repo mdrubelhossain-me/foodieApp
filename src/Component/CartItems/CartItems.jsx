@@ -7,7 +7,7 @@ const CartItems = () => {
 
   // Helper function to get item details from the food list using the item id
   const getItemDetails = (id) => {
-    return foodList.find(item => item.f_id === id);
+    return foodList.find((item) => item.f_id === id);
   };
 
   // Calculate Sub Total

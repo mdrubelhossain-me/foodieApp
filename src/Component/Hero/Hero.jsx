@@ -55,7 +55,7 @@ const Hero = () => {
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
         >
-           <i class="bi bi-arrow-right icon"></i>
+           <i className="bi bi-arrow-right icon"></i>
           <span className="visually-hidden">Next</span>
         </button>
       </div>

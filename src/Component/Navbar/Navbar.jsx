@@ -218,7 +218,7 @@ const Navbar = () => {
               />
             </div>
             <div className="d-flex justify-content-end">
-              <button type="button" class="btn btn-primary mx-3 s-btn">
+              <button type="button" className="btn btn-primary mx-3 s-btn">
                 Search
               </button>
             </div>

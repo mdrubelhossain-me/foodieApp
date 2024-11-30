@@ -133,7 +133,7 @@ export const foodList = [
     price: 100,
     description:
       "Rich chocolate cake with a molten center, offering warm, gooey indulgence in every bite",
-    category: "dessert",
+    category: "Desserts",
   },
   {
     f_id: 2,
@@ -142,7 +142,7 @@ export const foodList = [
     price: 40,
     description:
       "Spiced baked apples topped with a golden oatmeal crumble, best enjoyed warm with vanilla ice cream",
-    category: "dessert",
+    category: "Desserts",
   },
   {
     f_id: 3,
@@ -151,7 +151,7 @@ export const foodList = [
     price: 60,
     description:
       "Creamy cheesecake topped with fresh, vibrant berries and a glossy glaze for a perfectly balanced dessert",
-    category: "dessert",
+    category: "Desserts",
   },
 
   {
@@ -161,7 +161,7 @@ export const foodList = [
     price: 70,
     description:
       "Spiced baked apples topped with a golden oatmeal crumble, best enjoyed warm with vanilla ice cream",
-    category: "dessert",
+    category: "Desserts",
   },
 
   {
@@ -171,7 +171,7 @@ export const foodList = [
     price: 70,
     description:
       "Indulge in a decadent chocolate cake with smooth ganache and coffee essence",
-    category: "cake",
+    category: "Cake",
   },
   {
     f_id: 6,
@@ -180,7 +180,7 @@ export const foodList = [
     price: 90,
     description:
       "A soft, spiced cake with creamy cheese frosting, topped with crunchy walnuts",
-    category: "cake",
+    category: "Cake",
   },
   {
     f_id: 7,
@@ -189,7 +189,7 @@ export const foodList = [
     price: 70,
     description:
       "Rich, velvety red cake paired with tangy, creamy frosting for ultimate delight",
-    category: "cake",
+    category: "Cake",
   },
   {
     f_id: 8,
@@ -198,7 +198,7 @@ export const foodList = [
     price: 60,
     description:
       " Banana cake with a sweet caramel topping, finished with creamy, buttery frosting",
-    category: "cake",
+    category: "Cake",
   },
 
   {
@@ -208,7 +208,7 @@ export const foodList = [
     price: 60,
     description:
       "A fiery Szechuan noodle dish with bold chili oil, garlic, and spices",
-    category: "noodles",
+    category: "Noodles",
   },
   {
     f_id: 10,
@@ -217,7 +217,7 @@ export const foodList = [
     price: 80,
     description:
       "Stir-fried rice noodles tossed with tofu, peanuts, and tangy lime juice",
-    category: "noodles",
+    category: "Noodles",
   },
   {
     f_id: 11,
@@ -226,7 +226,7 @@ export const foodList = [
     price: 40,
     description:
       "Golden fried noodles served with crispy veggies and savory soy-based sauce",
-    category: "noodles",
+    category: "Noodles",
   },
   {
     f_id: 12,
@@ -235,7 +235,7 @@ export const foodList = [
     price: 70,
     description:
       "A rich, buttery noodle dish tossed with garlic, Parmesan, and fragrant herbs",
-    category: "noodles",
+    category: "Noodles",
   },
 
   {
@@ -245,7 +245,7 @@ export const foodList = [
     price: 60,
     description:
       "Rich, creamy Alfredo sauce combined with tender pasta and sprinkled with Parmesan cheese",
-    category: "pasta",
+    category: "Pasta",
   },
   {
     f_id: 14,
@@ -254,7 +254,7 @@ export const foodList = [
     price: 100,
     description:
       "A savory, hearty meat sauce served over spaghetti, with a blend of herbs",
-    category: "pasta",
+    category: "Pasta",
   },
   {
     f_id: 15,
@@ -263,7 +263,7 @@ export const foodList = [
     price: 90,
     description:
       "Penne pasta tossed in a spicy, tangy tomato sauce topped with basil",
-    category: "pasta",
+    category: "Pasta",
   },
   {
     f_id: 16,
@@ -271,7 +271,7 @@ export const foodList = [
     image: pa4,
     price: 70,
     description: "Pesto Pasta with Fresh Basil, Pine Nuts, and Olive Oil",
-    category: "pasta",
+    category: "Pasta",
   },
 
   {
@@ -281,7 +281,7 @@ export const foodList = [
     price: 70,
     description:
       " Crisp spring rolls filled with fresh vegetables, served with creamy peanut dipping sauce",
-    category: "rolls",
+    category: "Rolls",
   },
   {
     f_id: 18,
@@ -290,7 +290,7 @@ export const foodList = [
     price: 60,
     description:
       "Tender chicken wrapped in rice, drizzled with sweet teriyaki sauce and sesame seeds",
-    category: "rolls",
+    category: "Rolls",
   },
   {
     f_id: 19,
@@ -299,7 +299,7 @@ export const foodList = [
     price: 100,
     description:
       "Golden, deep-fried egg rolls filled with pork and shrimp, served with chili sauce",
-    category: "rolls",
+    category: "Rolls",
   },
   {
     f_id: 20,
@@ -308,7 +308,7 @@ export const foodList = [
     price: 40,
     description:
       "Juicy beef encased in a mushroom filling, wrapped in crispy puff pastry",
-    category: "rolls",
+    category: "Rolls",
   },
 
   {
@@ -318,7 +318,7 @@ export const foodList = [
     price: 60,
     description:
       "A refreshing salad with chickpeas, cucumber, tomatoes, olives, and tangy feta cheese",
-    category: "salad",
+    category: "Salad",
   },
   {
     f_id: 22,
@@ -327,7 +327,7 @@ export const foodList = [
     price: 40,
     description:
       "Roasted root vegetables like carrots and beets served on fresh arugula leaves",
-    category: "salad",
+    category: "Salad",
   },
   {
     f_id: 23,
@@ -336,7 +336,7 @@ export const foodList = [
     price: 70,
     description:
       "Crisp romaine lettuce tossed with creamy Caesar dressing, croutons, and grated Parmesan",
-    category: "salad",
+    category: "Salad",
   },
   {
     f_id: 24,
@@ -345,7 +345,7 @@ export const foodList = [
     price: 50,
     description:
       "Nutritious kale and quinoa mixed with creamy avocado and tangy lemon dressing",
-    category: "salad",
+    category: "Salad",
   },
 
   {
@@ -355,7 +355,7 @@ export const foodList = [
     price: 60,
     description:
       "A triple-layered sandwich with turkey, crispy bacon, fresh lettuce, and tomato",
-    category: "sandwitch",
+    category: "Sandwitch",
   },
   {
     f_id: 26,
@@ -364,7 +364,7 @@ export const foodList = [
     price: 90,
     description:
       "Golden, crispy bread filled with gooey, melted cheddar cheese for pure comfort",
-    category: "sandwitch",
+    category: "Sandwitch",
   },
 
   {
@@ -374,7 +374,7 @@ export const foodList = [
     price: 40,
     description:
       "Fresh mozzarella, ripe tomatoes, and basil layered with tangy balsamic glaze",
-    category: "sandwitch",
+    category: "Sandwitch",
   },
 
   {
@@ -384,7 +384,7 @@ export const foodList = [
     price: 65,
     description:
       "Juicy grilled chicken, crisp romaine, and Caesar dressing on toasted bread",
-    category: "sandwitch",
+    category: "Sandwitch",
   },
 
   {
@@ -394,7 +394,7 @@ export const foodList = [
     price: 65,
     description:
       "Crisp apple slices tossed with crunchy walnuts and sweet cinnamon honey dressing",
-    category: "fruits",
+    category: "Fruits",
   },
 
   {
@@ -404,7 +404,7 @@ export const foodList = [
     price: 45,
     description:
       "Juicy grapes paired with assorted cheeses, herbs, and crispy crackers for snacking",
-    category: "fruits",
+    category: "Fruits",
   },
   {
     f_id: 31,
@@ -413,7 +413,7 @@ export const foodList = [
     price: 95,
     description:
       "A creamy tropical mango smoothie with coconut milk, lime zest, and natural sweetness",
-    category: "fruits",
+    category: "Fruits",
   },
   {
     f_id: 32,
@@ -422,6 +422,6 @@ export const foodList = [
     price: 75,
     description:
       "A moist citrus cake infused with orange zest, topped with a tangy glaze",
-    category: "fruits",
+    category: "Fruits",
   },
 ];

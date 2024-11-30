@@ -44,7 +44,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     margin: auto;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .product-details h5 {
@@ -68,31 +68,8 @@
 }
 
 .product-details .description {
-    font-size: 15px;
-    padding: 15px 0px;
-}
-
-.product-details .weight {
-    margin-bottom: 35px;
-}
-
-.product-details .weight h6 {
-    font-size: 16px;
-    opacity: .9;
-    padding-bottom: 10px;
-}
-
-.product-details .weight span {
     font-size: 14px;
-    border: 1px solid rgb(252, 240, 240);
-    padding: 7px 12px;
-    background-color: rgb(252, 240, 240);
-    margin-right: 8px;
-    cursor: pointer;
-}
-
-.product-details .myBtn {
-    width: 130px;
+    padding: 15px 0px 0px 0px;
 }
 
 .category h6 {

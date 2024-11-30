@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { StoreContext } from "../../Context/StoreContext";
 import Breadcrumb from './../Breadcrumb/Breadcrumb';
 import p1 from '../../assets/images/slider/s4.jpg'
+import Description from '../Description/Description';
 
 const FoodDetails = () => {
   const { foodList } = useContext(StoreContext);
@@ -73,6 +74,7 @@ const FoodDetails = () => {
               </div>
             </div>
           </div>
+          <Description/>
         </div>
       </div>
     </div>

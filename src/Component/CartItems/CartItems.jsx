@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { StoreContext } from "../../Context/StoreContext";
 import "./CartItem.css";
+import { Link } from "react-router-dom";
 
 const CartItems = () => {
   const { cart, foodList, removeFromCart } = useContext(StoreContext);
@@ -56,13 +57,15 @@ const CartItems = () => {
                     return (
                       <tr key={id}>
                         <td className="text-center">
+                        <Link to={`/food/${id}`}>
                           <img
                             src={item.image}
                             className="cart-img img-fluid"
                             alt={item.name}
                           />
+                          </Link>
                         </td>
-                        <td>{item.name}</td>
+                        <td className="name">{item.name}</td>
                         <td>${item.price}</td>
                         <td>{cart[id]}</td>
                         <td>${item.price * cart[id]}</td>

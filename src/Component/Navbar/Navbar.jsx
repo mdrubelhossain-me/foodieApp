@@ -50,7 +50,7 @@ const Navbar = () => {
                   onClick={() => setMenu("menu")}
                   className={`nav-item ${menu === "menu" ? "active" : ""}`}
                 >
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="#explore-menu">
                     Menu
                   </a>
                 </li>
@@ -173,7 +173,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#explore-menu">
                   Menu
                 </a>
               </li>

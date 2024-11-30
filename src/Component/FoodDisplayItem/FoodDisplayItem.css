@@ -26,13 +26,13 @@
 
     
 }
-.food-item-card .card .card-body a{
+.food-item-card .card .card-body .name{
     font-size: 14px;
     text-decoration: none;
     color: black;
     opacity: .8;
 }
-.food-item-card .card .card-body a:hover{
+.food-item-card .card .card-body .name:hover{
     opacity: 1;
 }
 .food-item-card .card .card-body h6{

@@ -22,9 +22,9 @@ const FoodDisplayItem = ({ id, name, image, price, description }) => {
           <img src={image} alt={name} />
         </div>
         <div className="card-body">
-          <a href="#" className="d-block">
+          <p  className="d-block name">
             {truncateText(name, 6)}
-          </a>
+          </p>
           <div className="d-flex justify-content-between">
             <div className="d-flex gap-2 review-section">
               <div className="rating">

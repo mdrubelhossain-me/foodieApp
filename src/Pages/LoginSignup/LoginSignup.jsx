@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./LoginSignup.css";
 import { Link } from "react-router-dom";
 
 const LoginSignup = () => {
+  // State to toggle between login and signup
+  const [isLogin, setIsLogin] = useState(true);
+
   const togglePassword = () => {
     const passwordInput = document.getElementById("password");
     const icon = document.getElementById("password-show-icon");
@@ -29,14 +32,35 @@ const LoginSignup = () => {
 
               <div className="mt-5">
                 <form>
-                  <div className="mb-3">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Your Name"
-                      required
-                    />
-                  </div>
+                  {/* Conditional fields based on the form type */}
+                  {!isLogin && (
+                    <>
+                      <div className="mb-3">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="Your Name"
+                          required
+                        />
+                      </div>
+                      <div className="mb-3">
+                        <input
+                          type="email"
+                          className="form-control"
+                          placeholder="Enter Email"
+                          required
+                        />
+                      </div>
+                      <div className="mb-3">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="Enter Phone"
+                          required
+                        />
+                      </div>
+                  </>)}
+
                   <div className="mb-3">
                     <input
                       type="email"
@@ -45,14 +69,7 @@ const LoginSignup = () => {
                       required
                     />
                   </div>
-                  <div className="mb-3">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Enter Phone"
-                      required
-                    />
-                  </div>
+
                   <div className="mb-3">
                     <div className="input-group">
                       <input
@@ -80,28 +97,47 @@ const LoginSignup = () => {
                       type="submit"
                       className="myBtn w-100 rounded-25 m-0"
                     >
-                      Continue
+                      {isLogin ? "SignIn" : "Continue"}
                     </button>
                   </div>
                   <div className="mb-3 text-center">
                     <p>
-                      Already have an account?
-                      <Link className="mx-2" to="" style={{ color: "#70ac11" }}>
-                        Login here
-                      </Link>
+                      {isLogin ? (
+                        <>
+                          Don't have an account? 
+                          <Link 
+                            to="#" 
+                            style={{ color: "#70ac11", paddingLeft: "8px" }} 
+                            onClick={() => setIsLogin(false)}>
+                            Create an Account
+                          </Link>
+                        </>
+                      ) : (
+                        <>
+                          Already have an account? 
+                          <Link 
+                            to="#" 
+                            style={{ color: "#70ac11", paddingLeft: "8px" }} 
+                            onClick={() => setIsLogin(true)}>
+                            SignIn here
+                          </Link>
+                        </>
+                      )}
                     </p>
                   </div>
-                  <div className="mb-3">
-                    <div className="form-check">
-                      <input
-                        className="form-check-input mt-1"
-                        type="checkbox"
-                      />
-                      <label className="form-check-label">
-                        By continuing, I agree to terms of use & privacy policy
-                      </label>
+                  {!isLogin && (
+                    <div className="mb-3">
+                      <div className="form-check">
+                        <input
+                          className="form-check-input mt-1"
+                          type="checkbox"
+                        />
+                        <label className="form-check-label">
+                          By continuing, I agree to terms of use & privacy policy
+                        </label>
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </form>
               </div>
             </div>

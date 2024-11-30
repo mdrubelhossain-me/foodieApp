@@ -1,7 +1,7 @@
-// FoodDisplayItem.js
 import React, { useContext } from "react";
 import { StoreContext } from "../../Context/StoreContext";
 import "./FoodDisplayItem.css";
+import { Link } from 'react-router-dom';
 
 const FoodDisplayItem = ({ id, name, image, price, description }) => {
   const { cart, addToCart, removeFromCart } = useContext(StoreContext);
@@ -22,9 +22,9 @@ const FoodDisplayItem = ({ id, name, image, price, description }) => {
           <img src={image} alt={name} />
         </div>
         <div className="card-body">
-          <p  className="d-block name">
+          <Link to={`/food/${id}`} className="d-block name">
             {truncateText(name, 6)}
-          </p>
+          </Link>
           <div className="d-flex justify-content-between">
             <div className="d-flex gap-2 review-section">
               <div className="rating">

@@ -1,0 +1,108 @@
+.product-details {
+    font-family: "Poppins", sans-serif;
+}
+
+.product-details .sm-img-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.product-details .sm-img-section .sm-img {
+    height: 100px;
+    width: 90px;
+    border: none;
+    background-color: #eaffc5;
+    position: relative;
+}
+
+.product-details .sm-img-section .sm-img img {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: auto;
+    object-fit: cover;
+}
+
+.product-details .full-img {
+    width: 100%;
+    height: 432px;
+    background-color: #eaffc5;
+    position: relative;
+}
+
+.product-details .full-img img {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: auto;
+    object-fit: cover;
+}
+
+.product-details h5 {
+    margin: 0;
+}
+
+.product-details .review-section i {
+    color: rgb(252, 108, 24);
+    font-size: 11px;
+}
+
+.product-details .review-section span {
+    font-size: 12px;
+    color: #70ac11;
+}
+
+.product-details .price h6{
+    padding-top: 8px;
+    font-size: 18px;
+    color: #70ac11;
+}
+
+.product-details .description {
+    font-size: 15px;
+    padding: 15px 0px;
+}
+
+.product-details .weight {
+    margin-bottom: 35px;
+}
+
+.product-details .weight h6 {
+    font-size: 16px;
+    opacity: .9;
+    padding-bottom: 10px;
+}
+
+.product-details .weight span {
+    font-size: 14px;
+    border: 1px solid rgb(252, 240, 240);
+    padding: 7px 12px;
+    background-color: rgb(252, 240, 240);
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.product-details .myBtn {
+    width: 130px;
+}
+
+.category h6 {
+    display: inline-block;
+    font-size: 16px;
+    opacity: .9;
+}
+
+.category span {
+    padding-left: 8px;
+    font-size: 15px;
+    opacity: .9;
+}

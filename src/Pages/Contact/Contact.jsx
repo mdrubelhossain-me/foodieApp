@@ -1,31 +1,38 @@
-import React from 'react';
-import './Contact.css'
-import { useForm } from 'react-hook-form';
-import p1 from '../../assets/images/slider/s2.jpg'
-import Breadcrumb from '../../Component/Breadcrumb/Breadcrumb';
+import React from "react";
+import "./Contact.css";
+import { useForm } from "react-hook-form";
+import p1 from "../../assets/images/slider/s2.jpg";
+import Breadcrumb from "../../Component/Breadcrumb/Breadcrumb";
 
 const Contact = () => {
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-      } = useForm();
-    
-      const onSubmit = (data) => {
-        console.log(data);
-      };
-    return (
-      <div>
-         <Breadcrumb title="Contact" bgImg={p1} />
-               <div className="contact-section mt-5 pt-5">
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+  };
+  return (
+    <div>
+      <Breadcrumb title="Contact" bgImg={p1} />
+      <div className="contact-section mt-5 pt-5">
         <div className="container">
           <div className="row g-5 pb-5 overflow-hidden">
             <div className="col-lg-6 col-md-12 col-sm-12 l-side">
               <h2>
-                <b style={{ color: "#70ac11", opacity: ".8" }}>Connect</b> With Us
+                <b style={{ color: "#70ac11", opacity: ".8" }}>Connect</b> With
+                Us
               </h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolorem? Necessitatibus ullam cumque expedita numquam placeat saepe beatae, eius sint repellat harum labore sequi laudantium repellendus quos optio molestiae odio officiis! Quas tempora neque sapiente, consectetur commodi, omnis, temporibus dolor et maiores similique explicabo eaque dolore voluptatibus. Necessitatibus, quae molestiae
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                dolorem? Necessitatibus ullam cumque expedita numquam placeat
+                saepe beatae, eius sint repellat harum labore sequi laudantium
+                repellendus quos optio molestiae odio officiis! Quas tempora
+                neque sapiente, consectetur commodi, omnis, temporibus dolor et
+                maiores similique explicabo eaque dolore voluptatibus.
+                Necessitatibus, quae molestiae
               </p>
               <div className="row g-3 mt-3 justify-content-center">
                 <div className="col-lg-4 col-md-4 col-sm-6 col-6">
@@ -172,19 +179,19 @@ const Contact = () => {
           </div>
         </div>
         <div className="col-lg-12 mt-5 pt-3">
-            <div className="map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233668.06396725783!2d90.25487754014735!3d23.780753031632905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1730570074607!5m2!1sen!2sbd"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
+          <div className="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233668.06396725783!2d90.25487754014735!3d23.780753031632905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1730570074607!5m2!1sen!2sbd"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
+        </div>
       </div>
-      </div>
-    );
+    </div>
+  );
 };
 
 export default Contact;

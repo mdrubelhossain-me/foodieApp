@@ -1,2 +1,51 @@
 
 
+.checkout{
+    font-family: "Poppins", sans-serif;
+}
+
+.checkout h5{
+    margin-bottom: 0;
+    padding-bottom: 25px;
+}
+.checkout .form-section{
+    margin-top: 0!important;
+    padding: 20px 20px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.checkout .form-section form label{
+    font-size: 14px;
+    opacity: .8;
+}
+.checkout .form-section form input{
+    font-size: 14px;
+    opacity: .8;
+}
+.checkout .form-section form select{
+    font-size: 14px!important;
+    opacity: .8!important;
+}
+.checkout .form-section form label span{
+    color: red;
+}
+.checkout .form-section form textarea{
+    font-size: 14px;
+    opacity: .8;
+}
+.cart-total p{
+    font-size: 14px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+.cart-total h6{
+    font-size: 15px;
+    padding: 5px 0px;
+}
+.cart-total{
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

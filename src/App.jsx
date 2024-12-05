@@ -9,6 +9,7 @@ import Contact from "./Pages/Contact/Contact";
 import Cart from "./Pages/Cart/Cart";
 import LoginSignup from "./Pages/LoginSignup/LoginSignup";
 import FoodDetails from "./Component/FoodDetails/FoodDetails";
+import Checkout from "./Pages/Checkout/Checkout";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/loginSingup" element={<LoginSignup />} />
           <Route path="/food/:id" element={<FoodDetails />} /> 
+          <Route path="/checkout"  element={<Checkout/>}></Route>
         </Routes>
         <BackToTopButton />
         <Footer />

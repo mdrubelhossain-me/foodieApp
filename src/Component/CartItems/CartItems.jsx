@@ -117,7 +117,7 @@ const CartItems = () => {
                 <h6>${calculateTotal().toFixed(2)}</h6>
               </div>
               <div>
-                <button className="myBtn m-0">Proceed to Checkout</button>
+                <Link to="/checkout" className="myBtn m-0 text-decoration-none">Proceed to Checkout</Link>
               </div>
             </div>
           </div>
